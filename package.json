@@ -1,0 +1,19 @@
+{
+  "name": "@nanoempireai/nano-x402-client",
+  "version": "1.0.0",
+  "description": "Client SDK for autonomous agents to interact with x402 Payment Required tollbooths using Solana/Base USDC.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node scripts/claim.js"
+  },
+  "keywords": ["ai", "agents", "x402", "solana", "crypto", "payments", "mcp"],
+  "author": "Nano Empire AI",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
